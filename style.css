@@ -13,3 +13,5 @@ a { color: var(--accent); }
 nav { margin: 8px 0 24px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
 nav a { margin-right: 18px; }
 footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.toc { font-size: 15px; color: var(--muted); }
+code { font: 15px ui-monospace, SFMono-Regular, Menlo, monospace; }
