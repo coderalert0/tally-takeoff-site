@@ -3,111 +3,602 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Construction Takeoff - Tally: User guide</title>
-<meta name="description" content="How to count, measure, mark up and price construction plan PDFs with Tally on iPad, iPhone and Mac.">
+<title>User Guide · Construction Takeoff - Tally</title>
+<meta name="description" content="How to count, measure, mark up and price construction plan PDFs with Tally on iPad, iPhone and Mac, step by step.">
+<meta name="theme-color" content="#0b1a30">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 </head>
 <body>
-<main>
-<header><img src="icon.png" alt=""><h1>Construction Takeoff - Tally</h1></header>
-<nav><a href="./">Support</a><a href="guide.html">User guide</a><a href="privacy.html">Privacy Policy</a></nav>
+<a class="skip" href="#guide">Skip to the guide</a>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="./"><img src="icon.png" alt=""><span>Tally</span></a>
+    <nav class="nav" aria-label="Site">
+      <a href="./">Support</a>
+      <a href="guide.html" aria-current="page">User guide</a>
+      <a href="./#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
 
-<p>Tally counts, measures and marks up construction plan PDFs on iPad, iPhone and Mac. This guide follows the app's tool bar from left to right: <strong>Move</strong>, <strong>Take off</strong>, <strong>Markup</strong>, <strong>Edit</strong>, <strong>Erase</strong> and <strong>Calibrate</strong>. Features marked <em>Pro</em> need Tally Pro.</p>
+<section class="hero">
+  <div class="hero-in">
+    <span class="eyebrow"><svg class="ic"><use href="icons.svg#book"/></svg>User guide</span>
+    <h1>Everything Tally does, <em>step by step</em></h1>
+    <p class="lead">Count, measure, mark up and price construction plan PDFs on iPad, iPhone and Mac. New to Tally? Start with your first takeoff. Looking for something? Search the guide.</p>
+    <div class="search" role="search">
+      <svg class="ic"><use href="icons.svg#search"/></svg>
+      <input id="guide-search" type="search" placeholder="Search the guide: scale, Find all, Excel, zones…" aria-label="Search the guide" autocomplete="off">
+    </div>
+    <div class="search-status" id="search-status" aria-live="polite"></div>
+    <div class="chips">
+      <a href="#quick-start">First takeoff</a><a href="#scale">Scale</a><a href="#counting">Find all</a><a href="#rooms">Rooms</a><a href="#pricing">Pricing the bid</a><a href="#exports">Exports</a><a href="#icloud">iCloud</a><a href="#shortcuts">Keyboard shortcuts</a>
+    </div>
+  </div>
+</section>
 
-<p class="toc"><a href="#plans">Plans and sheets</a> · <a href="#scale">Scale</a> · <a href="#count">Counting</a> · <a href="#measure">Lengths and areas</a> · <a href="#zones">Zones</a> · <a href="#markup">Markup</a> · <a href="#edit">Editing</a> · <a href="#bid">Pricing and the bid</a> · <a href="#export">Exports</a> · <a href="#revisions">Revised sets</a> · <a href="#mac">iPad and Mac</a></p>
+<div class="layout">
+  <aside class="sidebar" aria-label="Contents">
+    <nav class="toc">
+      <div class="toc-group"><h4>Start here</h4>
+        <a href="#quick-start"><svg class="ic"><use href="icons.svg#zap"/></svg>Your first takeoff</a>
+        <a href="#screen"><svg class="ic"><use href="icons.svg#layout"/></svg>Finding your way around</a>
+      </div>
+      <div class="toc-group"><h4>Plans</h4>
+        <a href="#library"><svg class="ic"><use href="icons.svg#folder"/></svg>Library and importing</a>
+        <a href="#sheets"><svg class="ic"><use href="icons.svg#layers"/></svg>Sheets and search</a>
+        <a href="#scale"><svg class="ic"><use href="icons.svg#ruler"/></svg>Scale</a>
+      </div>
+      <div class="toc-group"><h4>Take off</h4>
+        <a href="#items"><svg class="ic"><use href="icons.svg#list"/></svg>Items</a>
+        <a href="#counting"><svg class="ic"><use href="icons.svg#target"/></svg>Counting and Find all</a>
+        <a href="#measure"><svg class="ic"><use href="icons.svg#shape"/></svg>Lengths and areas</a>
+        <a href="#rooms"><svg class="ic"><use href="icons.svg#home"/></svg>Rooms in one tap</a>
+        <a href="#zones"><svg class="ic"><use href="icons.svg#grid"/></svg>Zones</a>
+      </div>
+      <div class="toc-group"><h4>Mark up</h4>
+        <a href="#markup"><svg class="ic"><use href="icons.svg#pen"/></svg>Markup</a>
+        <a href="#editing"><svg class="ic"><use href="icons.svg#pointer"/></svg>Editing, copy and paste</a>
+      </div>
+      <div class="toc-group"><h4>Bid and share</h4>
+        <a href="#pricing"><svg class="ic"><use href="icons.svg#dollar"/></svg>Pricing the bid</a>
+        <a href="#exports"><svg class="ic"><use href="icons.svg#share"/></svg>Exports and printing</a>
+        <a href="#sharing"><svg class="ic"><use href="icons.svg#send"/></svg>Sending a takeoff</a>
+        <a href="#revisions"><svg class="ic"><use href="icons.svg#refresh"/></svg>Revised sets</a>
+      </div>
+      <div class="toc-group"><h4>Devices and account</h4>
+        <a href="#icloud"><svg class="ic"><use href="icons.svg#cloud"/></svg>iCloud</a>
+        <a href="#devices"><svg class="ic"><use href="icons.svg#monitor"/></svg>iPad, Mac and Pencil</a>
+        <a href="#shortcuts"><svg class="ic"><use href="icons.svg#command"/></svg>Keyboard shortcuts</a>
+        <a href="#pro"><svg class="ic"><use href="icons.svg#star"/></svg>Tally Pro</a>
+        <a href="#access"><svg class="ic"><use href="icons.svg#globe"/></svg>Languages and accessibility</a>
+      </div>
+    </nav>
+  </aside>
 
-<h2 id="plans">Plans and sheets</h2>
-<ul>
-<li><strong>Import:</strong> tap <strong>+</strong> in the library and pick a plan set PDF, or a photo or scan of a sheet (JPEG, PNG, HEIC). You can also open a PDF in Tally from Files, Mail or the share sheet, or drop it on the library. Pick a starter item list (electrical, drywall and framing, flooring, roofing, plumbing, HVAC, concrete, painting) or start blank.</li>
-<li><strong>Sheets:</strong> the sheet button at the top left (it shows the sheet number, such as E-101) opens every sheet as a thumbnail. Sheet numbers are read from the title blocks. Use the arrows (⌘← and ⌘→ on a Mac) to step through the set.</li>
-<li><strong>Search:</strong> type in the sheet browser to find a sheet by number, or any text on the plans: a fixture tag, a room name, a note. A result opens its sheet zoomed to the text. Scanned sheets (even with a page number stamped on them) have no text to search at first, so Tally reads them the first time you search (a few seconds a sheet) and keeps what it read.</li>
-<li><strong>Rotate sheet</strong> (scale menu, ⌘R) turns a sheet that's stored sideways. The plan file isn't changed.</li>
-</ul>
+  <main class="content" id="guide">
+    <details class="mtoc">
+      <summary><svg class="ic"><use href="icons.svg#list"/></svg>Contents</summary>
+      <nav class="toc">
+        <div class="toc-group"><h4>Start here</h4><a href="#quick-start">Your first takeoff</a><a href="#screen">Finding your way around</a></div>
+        <div class="toc-group"><h4>Plans</h4><a href="#library">Library and importing</a><a href="#sheets">Sheets and search</a><a href="#scale">Scale</a></div>
+        <div class="toc-group"><h4>Take off</h4><a href="#items">Items</a><a href="#counting">Counting and Find all</a><a href="#measure">Lengths and areas</a><a href="#rooms">Rooms in one tap</a><a href="#zones">Zones</a></div>
+        <div class="toc-group"><h4>Mark up</h4><a href="#markup">Markup</a><a href="#editing">Editing, copy and paste</a></div>
+        <div class="toc-group"><h4>Bid and share</h4><a href="#pricing">Pricing the bid</a><a href="#exports">Exports and printing</a><a href="#sharing">Sending a takeoff</a><a href="#revisions">Revised sets</a></div>
+        <div class="toc-group"><h4>Devices and account</h4><a href="#icloud">iCloud</a><a href="#devices">iPad, Mac and Pencil</a><a href="#shortcuts">Keyboard shortcuts</a><a href="#pro">Tally Pro</a><a href="#access">Languages and accessibility</a></div>
+      </nav>
+    </details>
 
-<h2 id="scale">Scale</h2>
-<ul>
-<li>Pick the sheet's scale from the scale menu (architectural or engineering), or choose <strong>Calibrate</strong>, tap the two ends of a dimension you know and type its length, such as <code>20'</code>, <code>20' 6"</code> or <code>3.5 m</code>. Use the longest dimension you can find.</li>
-<li>With a scale set, calibrating again first shows the line's length at the current scale, so you can check that a sheet was printed to scale.</li>
-<li><strong>Use this scale on all sheets</strong> copies it to the rest of the set. <strong>Repeat this sheet</strong> counts a typical floor more than once.</li>
-</ul>
+    <div class="empty" id="no-results" hidden>Nothing in the guide matches that. Try another word, or <a href="./#faq">look in the questions</a>.</div>
 
-<h2 id="count">Counting</h2>
-<ul>
-<li>Choose <strong>Take off</strong>, pick an item from the item menu, and tap each symbol.</li>
-<li><strong>Find all</strong> (<em>Pro</em>): zoom in until a symbol is easy to tap, turn on Find all and tap one copy. Every match on the sheet is ringed for you to check; tap <strong>Add</strong>. Then <strong>All sheets</strong> looks for the same symbol on the rest of the set.</li>
-<li><strong>Hide counted symbols</strong> (item menu) covers what you've counted, so what's left stands out. <strong>Marker size</strong> makes markers smaller on a crowded sheet.</li>
-<li><strong>Show only this item's marks</strong> (item menu) hides the other items while you work.</li>
-</ul>
+    <!-- Quick start -->
+    <section class="g-section" id="quick-start" data-k="start begin tutorial first new import">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#zap"/></svg></span><h2>Your first takeoff</h2></div>
+      <p class="sec-intro">From a plan set PDF to priced quantities in seven steps. No plans at hand? Tap <span class="ui">Try the sample plan</span> in an empty library and follow along on a real electrical sheet.</p>
+      <ol class="steps">
+        <li><b>Import your plans</b><span>In the library, tap <span class="ui">+</span>, choose the starter list for your trade (or Blank), then pick the plan set PDF. A photo or scan of a single sheet works too.</span></li>
+        <li><b>Set the scale</b><span>Most sheets print their scale, and Tally offers it in one tap when you start taking off. You can also pick it from the scale button at the top, or calibrate from any dimension. <a href="#scale">More on scale</a></span></li>
+        <li><b>Pick an item</b><span>Choose <span class="ui">Take off</span> in the tool bar, then tap an item in the items panel (or pick one from the item button under the tools). Add your own with <span class="ui">Add item</span>.</span></li>
+        <li><b>Count</b><span>Tap each symbol. Or zoom in, turn on <span class="ui">Find all</span> and tap one: every match on the sheet is proposed for you to check and add. <a href="#counting">How Find all works</a></span></li>
+        <li><b>Measure</b><span>For a length, tap along the run and tap <span class="ui">Done</span>. For an area, tap its corners and tap <span class="ui">Done</span>. Taps snap to the drawing's lines. <a href="#measure">Lengths and areas</a></span></li>
+        <li><b>Price it</b><span>Give each item a unit cost and waste, then add overhead, profit and tax under the total. <a href="#pricing">Pricing the bid</a></span></li>
+        <li><b>Export or share</b><span>The export button at the top sends an Excel workbook, a CSV, a PDF report or the marked-up plans. <a href="#exports">Exports</a></span></li>
+      </ol>
+      <div class="note tip"><svg class="ic"><use href="icons.svg#bulb"/></svg><p>Every change can be undone. <span class="ui">Undo</span> sits at the top of the screen (<kbd>⌘Z</kbd> on a Mac), and a whole Find all or a whole sheet of rooms comes off in one Undo.</p></div>
+    </section>
 
-<h2 id="measure">Lengths and areas</h2>
-<ul>
-<li>For a length item, tap along the run and tap <strong>Done</strong>. For an area, tap its corners and tap <strong>Done</strong>. Taps snap to the drawing's own lines (<strong>Snap</strong> turns this off).</li>
-<li><strong>Arc</strong> adds a curve: tap a point on the curve, then where it ends. <strong>Deduct</strong> draws a cut-out that is subtracted from the area.</li>
-<li><strong>Room</strong> (<em>Pro</em>): tap inside a room and its walls give the area, or the perimeter for base and trim. <strong>All rooms</strong> outlines every room on the sheet; tap any you don't want, then <strong>Add</strong>.</li>
-<li>In an item's settings: a <strong>wall height</strong> turns a run into wall area; a <strong>roof pitch</strong> turns plan area into true roof area; a <strong>depth</strong> turns a slab, base or excavation into cubic yards (and it can be priced per cubic yard); <strong>extra per run</strong> adds drops or makeup to every run.</li>
-</ul>
+    <!-- The screen -->
+    <section class="g-section" id="screen" data-k="toolbar tool bar buttons layout interface move take off markup edit erase calibrate more menu iphone">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#layout"/></svg></span><h2>Finding your way around</h2></div>
+      <p class="sec-intro">A takeoff opens on one sheet of the set, with the tools along the bottom and your items on the right. Hover a number to find it on the screen.</p>
+      <div class="screenmap">
+        <div class="map">
+          <img src="img/screen-ipad.jpg" width="1000" height="1439" alt="Tally on iPad: a sheet with counted fixtures, the tool bar at the bottom and the items panel on the right" loading="lazy">
+          <span class="pin" data-pin="1" style="left:3.8%;top:5.1%">1</span>
+          <span class="pin" data-pin="2" style="left:14.2%;top:5.1%">2</span>
+          <span class="pin" data-pin="3" style="left:36.5%;top:5.1%">3</span>
+          <span class="pin" data-pin="4" style="left:60.4%;top:5.1%">4</span>
+          <span class="pin" data-pin="5" style="left:74%;top:5.1%">5</span>
+          <span class="pin" data-pin="6" style="left:80.6%;top:5.1%">6</span>
+          <span class="pin" data-pin="7" style="left:87.3%;top:5.1%">7</span>
+          <span class="pin" data-pin="8" style="left:94.2%;top:5.1%">8</span>
+          <span class="pin" data-pin="9" style="left:9%;top:10%">9</span>
+          <span class="pin" data-pin="10" style="left:30%;top:86.4%">10</span>
+          <span class="pin" data-pin="11" style="left:5.5%;top:94.2%">11</span>
+          <span class="pin" data-pin="12" style="left:88%;top:10%">12</span>
+          <span class="pin" data-pin="13" style="left:64.5%;top:85.4%">13</span>
+        </div>
+        <ol class="legend">
+          <li data-pin="1"><span><b>Back</b> to the library of takeoffs.</span></li>
+          <li data-pin="2"><span><b>Sheets.</b> Shows the sheet's number; tap for every sheet as a thumbnail, with search. The arrows beside it step through the set.</span></li>
+          <li data-pin="3"><span><b>Open in New Window</b> (iPad and Mac): a second sheet beside this one.</span></li>
+          <li data-pin="4"><span><b>Scale.</b> The sheet's scale; tap for the Scale menu.</span></li>
+          <li data-pin="5"><span><b>Undo</b>, with Redo beside it once you've undone something.</span></li>
+          <li data-pin="6"><span><b>Export</b> and print: Excel, CSV, PDF report, plan PDF, punch list, takeoff file.</span></li>
+          <li data-pin="7"><span><b>Markups</b>: every cloud, note and stamp as a punch list.</span></li>
+          <li data-pin="8"><span><b>Items panel</b>: show or hide it.</span></li>
+          <li data-pin="9"><span><b>Hint</b>: says what your next tap will do, and what just happened.</span></li>
+          <li data-pin="10"><span><b>Tools</b>: Move, Take off, Markup, Edit, Erase, Calibrate.</span></li>
+          <li data-pin="11"><span><b>Tool options</b>: they change with the tool. In Take off: the item (tap for the item menu), Find all and All sheets, or Snap, Room, Arc and Deduct for runs and areas.</span></li>
+          <li data-pin="12"><span><b>Items</b> and their totals. Tap one to take it off; press and hold for Edit, Duplicate and Move marks to.</span></li>
+          <li data-pin="13"><span><b>Total and bid</b>: the cost, overhead, profit and tax, and prices from a spreadsheet.</span></li>
+        </ol>
+      </div>
 
-<h2 id="zones">Zones</h2>
-<ul>
-<li>Zones split quantities by floor, area, phase or alternate. Add one from the item menu (<strong>Add a zone</strong>), or from the zone menu once you have some.</li>
-<li>Marks you add go in the zone you've picked, and the item list totals that zone. Pick <strong>All zones</strong> for the whole job.</li>
-<li><strong>Put this sheet's marks in zone</strong> (scale menu) assigns a whole floor at once; in Edit, <strong>Move to zone</strong> reassigns the marks you've picked. <strong>Manage zones</strong> renames, reorders or deletes them (deleting a zone keeps its marks).</li>
-<li>Exports add a breakdown by zone.</li>
-</ul>
+      <h3>The six tools</h3>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Tool</th><th>What it's for</th><th>Mac</th></tr></thead>
+        <tbody>
+          <tr><td>Move</td><td>Pan and zoom. Tap a photo pin to see the photo, or a sheet number written on the plan to open that sheet.</td><td><kbd>⌘1</kbd></td></tr>
+          <tr><td>Take off</td><td>Count, measure runs and areas, Find all and Room, with the item you've picked.</td><td><kbd>⌘2</kbd></td></tr>
+          <tr><td>Markup</td><td>Clouds, arrows, callouts, notes, highlights, pen, stamps, photos, dimensions and angles.</td><td><kbd>⌘3</kbd></td></tr>
+          <tr><td>Edit</td><td>Pick marks and markups to move, reshape, copy, restyle or delete them.</td><td><kbd>⌘4</kbd></td></tr>
+          <tr><td>Erase</td><td>Removes the mark or markup you tap.</td><td><kbd>⌘5</kbd></td></tr>
+          <tr><td>Calibrate</td><td>Sets the sheet's scale from a dimension you know.</td><td><kbd>⌘6</kbd></td></tr>
+        </tbody>
+      </table></div>
 
-<h2 id="markup">Markup</h2>
-<p>Choose <strong>Markup</strong>, then the type from the markup menu:</p>
-<ul>
-<li><strong>Cloud</strong>, <strong>Arrow</strong>, <strong>Callout</strong>, <strong>Note</strong>, <strong>Highlight</strong>: two taps (a note, one).</li>
-<li><strong>Pen:</strong> write or sketch with Apple Pencil, a finger or the mouse. After an Apple Pencil has drawn (or with iPadOS's Only Draw with Apple Pencil on), fingers move the sheet. Strokes drawn nearly straight become straight lines; turn that off in the Style menu. A tap makes a dot.</li>
-<li><strong>Stamp:</strong> APPROVED, APPROVED AS NOTED, REVISE AND RESUBMIT, REJECTED, FIELD VERIFY, NOT IN CONTRACT, PUNCH and COMPLETE, plus your own (<strong>New stamp</strong> in the stamp menu).</li>
-<li><strong>Photo:</strong> tap a spot, then take a photo, pick one from your library, or choose a photo file (from Files, or the Finder on a Mac). The photo is pinned there with an optional caption. With Move, tap the pin to see the photo, share it or caption it.</li>
-<li><strong>Dimension</strong> reads its length at the sheet's scale; <strong>Angle</strong> (three taps: one side's end, the corner, the other side's end) reads its degrees. Neither adds to your quantities.</li>
-<li><strong>Style:</strong> each markup type keeps its own colour and line weight, for every takeoff, until you change it.</li>
-<li><strong>Markups</strong> (top bar) lists every markup by sheet as a punch list: tap the circle to mark one resolved, or the row to go to it.</li>
-</ul>
+      <div class="split narrow-fig">
+        <div>
+          <h3>On iPhone</h3>
+          <p>Everything is there, in a bar sized for one hand. To keep <span class="ui">Undo</span> in the bar, Redo, Items, Export, Markups, Compare and Help sit in the <span class="ui">More</span> menu (the <span class="ui">…</span> button).</p>
+          <p>Pinch to zoom in before tapping small symbols. Find all asks you to when a fingertip would cover several.</p>
+          <div class="note"><svg class="ic"><use href="icons.svg#info"/></svg><p>As each mark goes in, the iPhone gives a light tap you can feel, so you can keep your eyes on the sheet.</p></div>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/iphone.jpg"><img src="img/iphone.jpg" width="600" height="1304" alt="Tally on iPhone with counted fixtures on a sheet" loading="lazy"></a><figcaption>Tally on iPhone.</figcaption></figure>
+      </div>
+    </section>
 
-<h2 id="edit">Editing</h2>
-<ul>
-<li>Choose <strong>Edit</strong> and tap a mark or markup. Drag a handle to move that point, or drag the mark to move all of it. One Undo puts it back.</li>
-<li><strong>Select area:</strong> drag a box to pick everything inside it, then drag any of them to move them together, or Copy, Delete, Move to zone or restyle them.</li>
-<li><strong>Copy</strong> and <strong>Paste</strong> (⌘C and ⌘V on a Mac; ⌘X cuts, ⌘A picks everything on the sheet) copy marks and markups onto another sheet, in the same place, or into another takeoff (marks go to its item of the same name). Pasted marks go in the zone you're working in, so a typical floor copied onto the next sheet counts for that floor.</li>
-<li>With a callout picked, <strong>Add leader</strong> points it at one more spot. <strong>Edit text</strong> changes a note, callout, stamp or caption.</li>
-<li><strong>Erase</strong> removes what you tap. <strong>Undo</strong> and <strong>Redo</strong> (⌘Z, ⇧⌘Z) step through every change.</li>
-</ul>
+    <!-- Library -->
+    <section class="g-section" id="library" data-k="import pdf open folders search rename delete recover recently deleted starter list template trade sample files drag drop picture photo image heic">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#folder"/></svg></span><h2>Library and importing</h2></div>
+      <p class="sec-intro">The library holds your takeoffs. Each one is a plan set with its items, marks, markups, photos and prices.</p>
 
-<h2 id="bid">Pricing and the bid</h2>
-<ul>
-<li>Give each item a unit cost and waste %. Add <strong>materials</strong> to an item (a receptacle's box, device and plate; a wall's studs and board) and exports add up a materials list.</li>
-<li>Under the total in the item list, <strong>Add overhead, profit and tax</strong> sets contingency, overhead, profit and tax as percentages of the takeoff cost, for the bid total (Return, or Next above the number pad, moves to the next one).</li>
-<li><strong>Duplicate</strong> an item (with its marks) to price a variant; <strong>Move marks to</strong> fixes marks counted against the wrong item.</li>
-</ul>
+      <h3>Import a plan set</h3>
+      <ol class="steps">
+        <li><b>Tap + in the library</b><span>On a Mac, click <span class="ui">+</span> in the window's tool bar.</span></li>
+        <li><b>Choose what to start with</b><span>A starter list of items for your trade (Electrical, Drywall and framing, Flooring, Roofing, Plumbing, HVAC, Concrete, Painting) or Blank. Or choose <span class="ui">Start with the items of</span> an earlier takeoff: its items, prices, waste and materials come along, without its marks.</span></li>
+        <li><b>Pick the file</b><span>A plan set PDF of any size (hundreds of sheets are fine), or a photo or scan of a sheet (JPEG, PNG or HEIC). A takeoff file sent by someone else opens here too.</span></li>
+      </ol>
+      <figure class="shot"><a class="zoom" href="img/library.jpg"><img src="img/library.jpg" width="1100" height="765" alt="The library with the import menu open, listing starter lists by trade and earlier takeoffs" loading="lazy"></a><figcaption>Starting a takeoff: a starter list by trade, or the items of an earlier takeoff.</figcaption></figure>
+      <p><b>Other ways in:</b> open a PDF in Tally from Files, Mail or any app's share sheet, or drag it onto the library on an iPad or a Mac. Tally keeps its own copy; your original file isn't changed.</p>
 
-<h2 id="export">Exports (<em>Pro</em>)</h2>
-<ul>
-<li><strong>Excel workbook</strong> with live totals: change a price or a percentage in Excel and the bid updates. Sheets for materials, zones, sheets and markups.</li>
-<li><strong>CSV</strong> for your estimating software.</li>
-<li><strong>PDF report</strong>: a quantity summary, the bid, every marked-up sheet with its own quantities, and your photos.</li>
-<li><strong>Plan PDF with markups</strong>: the plan set with your marks and markups as standard PDF annotations, for Bluebeam, Acrobat or Preview, followed by your photos.</li>
-<li><strong>Markups as a punch list</strong> (CSV).</li>
-<li>Exports are in the language Tally is in: English or Spanish.</li>
-</ul>
+      <h3>Keep the library tidy</h3>
+      <ul>
+        <li><b>Search</b> by name with the search field at the top.</li>
+        <li><b>Folders:</b> press and hold a takeoff (right-click on a Mac) and choose <span class="ui">Move to folder</span>, to file jobs by client or year.</li>
+        <li><b>Rename</b> a takeoff from the same menu.</li>
+      </ul>
 
-<h2 id="revisions">Revised sets</h2>
-<ul>
-<li>In the library, <strong>Replace with revised set</strong> moves a takeoff onto an addendum or revision. Marks follow their sheets by sheet number, even if sheets were added or reordered. The previous plan and takeoff are kept, with the photos of any sheet the revision drops.</li>
-<li><strong>Compare</strong> overlays a sheet on the version it replaced: removed in red, added in blue.</li>
-</ul>
+      <h3>Recently Deleted</h3>
+      <p>A takeoff you delete is kept for 30 days on that device. Open <span class="ui">Recently Deleted</span> at the bottom of the library and tap <span class="ui">Recover</span>, or <span class="ui">Delete for good</span> to remove it now.</p>
+      <div class="note"><svg class="ic"><use href="icons.svg#info"/></svg><p>If a takeoff was made by a newer version of Tally (on another of your devices, say) or its file was damaged, it stays in the library and says why when you open it. Updating Tally from the App Store opens it.</p></div>
+    </section>
 
-<h2 id="mac">iPad and Mac</h2>
-<ul>
-<li><strong>Open in New Window</strong> (⌥⌘N, or a sheet's menu in the sheet browser) shows a sheet in a window of its own beside the one you're taking off, with your marks updating live.</li>
-<li>On a Mac: ⌘1 to ⌘6 pick the tools, ⌘F turns on Find all, ⌘+ and ⌘− zoom, ⌘0 fits the sheet.</li>
-<li>Tally Pro bought on one device unlocks it on your others with the same Apple Account.</li>
-</ul>
+    <!-- Sheets -->
+    <section class="g-section" id="sheets" data-k="sheet browser thumbnails sheet number title block search text find rotate window links reference detail scan ocr">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#layers"/></svg></span><h2>Sheets and search</h2></div>
+      <p class="sec-intro">Tally reads each sheet's number from its title block, so you can find E-101 the way you would in a paper set.</p>
+      <ul>
+        <li><b>Every sheet at once:</b> tap the sheet button at the top left (it shows the sheet number, such as E-101) for a thumbnail of every sheet. Tap one to open it.</li>
+        <li><b>Step through the set</b> with the arrows beside the sheet button (<kbd>⌘←</kbd> and <kbd>⌘→</kbd> on a Mac).</li>
+        <li><b>Sheet numbers</b> are read from the title block, including scanned sheets (read with text recognition) and numbers such as A-201.A.</li>
+        <li><b>Search the plans:</b> type in the sheet browser to find a sheet by number, or any text on the plans: a fixture tag, a room name, a note. A result opens its sheet zoomed to the text, highlighted.</li>
+        <li><b>Scanned sets</b> have no text to search at first, so Tally reads each scanned sheet the first time you search (a few seconds a sheet) and keeps what it read. Later searches are instant.</li>
+        <li><b>Jump along references:</b> with <span class="ui">Move</span>, tap a sheet number written on a plan, such as SEE E-501 or a detail's 3/E-501, to open that sheet.</li>
+        <li><b>Rotate sheet</b> (Scale menu, <kbd>⌘R</kbd>) turns a sheet that's stored sideways, a quarter turn at a time. The plan file isn't changed, and marks stay where they are on the drawing.</li>
+        <li><b>Two sheets side by side</b> (iPad and Mac): <span class="ui">Open in New Window</span> (<kbd>⌥⌘N</kbd>, or press and hold a thumbnail in the sheet browser) shows a sheet in a window of its own, with your marks updating live as you work in the other.</li>
+      </ul>
+    </section>
 
-<footer>Construction Takeoff - Tally</footer>
-</main>
+    <!-- Scale -->
+    <section class="g-section" id="scale" data-k="scale calibrate printed architectural engineering metric 1:50 units feet metres meters dimension half size check typical floor repeat">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#ruler"/></svg></span><h2>Scale</h2></div>
+      <p class="sec-intro">Every sheet has its own scale. Lengths, areas, rooms and dimensions need one; counting doesn't.</p>
+      <div class="split">
+        <div>
+          <h3>The fastest way: the scale the sheet prints</h3>
+          <p>Tally reads the scale printed on each sheet, such as <code>SCALE: 1/8" = 1'-0"</code>, <code>1" = 20'</code>, or <code>1:50</code> under a view on a metric sheet, scans included.</p>
+          <ul>
+            <li>On a sheet with no scale yet, Take off offers the printed scale in one tap.</li>
+            <li>The Scale menu lists it first, under <span class="ui">Printed on this sheet</span>. A sheet that prints several (a plan and its details) lists them all: pick the one for the view you're taking off.</li>
+            <li><span class="ui">Use each sheet's printed scale</span> sets every sheet that has no scale yet from the one scale it prints, in a single step (one Undo). Sheets that print several, or none, are left for you, and Tally says how many.</li>
+          </ul>
+          <div class="note"><svg class="ic"><use href="icons.svg#info"/></svg><p>A printed scale is only right if the set was printed at its full size. For a half-size set, or a PDF of unknown origin, check it against a dimension (below).</p></div>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/scale-menu.jpg"><img src="img/scale-menu.jpg" width="520" height="1040" alt="The Scale menu with Calibrate from a dimension, Use this scale on all sheets, Use each sheet's printed scale, and the scale printed on this sheet" loading="lazy"></a><figcaption>The Scale menu, with the scale printed on this sheet.</figcaption></figure>
+      </div>
+
+      <h3>Calibrate from a dimension</h3>
+      <ol class="steps">
+        <li><b>Choose Calibrate</b><span>In the tool bar, or <span class="ui">Calibrate from a dimension</span> in the Scale menu.</span></li>
+        <li><b>Tap both ends of a dimension you know</b><span>Zoom in for accuracy, and use the longest dimension you can find. Taps snap to line ends.</span></li>
+        <li><b>Type its length</b><span>Such as <code>20'</code>, <code>20' 6"</code>, <code>6"</code> or <code>3.5 m</code>. In a metric takeoff, a number on its own is metres.</span></li>
+      </ol>
+      <p>If the sheet already has a scale, Tally first shows the line's length at that scale, so you can check that the sheet was printed to scale before changing anything.</p>
+
+      <h3>More in the Scale menu</h3>
+      <ul>
+        <li><b>Architectural, Engineering and Metric</b> list the usual scales (metric ones from 1:1 to 1:2500).</li>
+        <li><b>Use this scale on all sheets</b> copies this sheet's scale to the rest of the set.</li>
+        <li><b>Repeat this sheet (typical floor)</b> counts a sheet's quantities more than once, for a floor that repeats.</li>
+        <li><b>Remove scale</b> clears it.</li>
+        <li><b>Units</b> shows the takeoff in feet (LF, SF, cubic yards) or metres (m, m², m³). New takeoffs start in your region's units. Prices, totals and exports follow, and switching never changes a total.</li>
+      </ul>
+      <div class="note tip"><svg class="ic"><use href="icons.svg#bulb"/></svg><p>The items panel warns you when a run or area sits on a sheet with no scale yet, so nothing gets priced at zero by accident.</p></div>
+    </section>
+
+    <!-- Items -->
+    <section class="g-section" id="items" data-k="item add edit cost waste color colour materials assembly wall height roof pitch depth volume cubic yards extra per run drops duplicate move marks filter find an item">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#list"/></svg></span><h2>Items</h2></div>
+      <p class="sec-intro">An item is what you're taking off: a fixture type, a conduit size, a wall type, a floor finish. Each has a colour on the plan and a total in the items panel.</p>
+      <div class="split">
+        <div>
+          <h3>Add or change an item</h3>
+          <ul>
+            <li><b>Add item</b> at the bottom of the items panel. Give it a name, a colour, and what it's <b>measured by</b>: <b>Count</b> (EA), <b>Length</b> (LF) or <b>Area</b> (SF).</li>
+            <li><b>Edit:</b> press and hold an item (right-click on a Mac) and choose <span class="ui">Edit</span>.</li>
+            <li><b>Unit cost</b> and <b>Waste %</b>: waste is added on top of the measured quantity.</li>
+            <li><b>Materials</b> (optional): what goes with each unit, such as a receptacle's box, device and plate, or a wall's studs and board, each with its own price. Exports add up a materials list.</li>
+          </ul>
+          <h3>Options for runs and areas</h3>
+          <ul>
+            <li><b>Wall height</b> turns a run into wall area, and it can be priced per square foot.</li>
+            <li><b>Extra per run</b> adds drops or makeup to every run.</li>
+            <li><b>Roof pitch</b> turns an area drawn in plan into the true sloped surface (6 for 6/12).</li>
+            <li><b>Depth</b> turns an area into a volume in cubic yards, for a slab, a gravel base or an excavation, and it can be priced per cubic yard.</li>
+          </ul>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/item-editor.jpg"><img src="img/item-editor.jpg" width="800" height="898" alt="Editing an area item: colour, roof pitch, depth and materials" loading="lazy"></a><figcaption>An area item: colour, roof pitch, depth and materials.</figcaption></figure>
+      </div>
+      <h3>Working with items</h3>
+      <ul>
+        <li><b>Duplicate</b> an item, with its marks, to price a variant.</li>
+        <li><b>Move marks to</b> another item fixes marks counted against the wrong one.</li>
+        <li><b>Find an item:</b> once a takeoff has more than 10 items, a search field at the top of the panel narrows the list. Totals and the bid always count every item.</li>
+        <li>The <b>item menu</b> (the item button under the tools) also has <span class="ui">Show only this item's marks</span>, <span class="ui">Hide counted symbols</span> and <span class="ui">Marker size</span>.</li>
+      </ul>
+    </section>
+
+    <!-- Counting -->
+    <section class="g-section" id="counting" data-k="count tap find all symbol fixture match all sheets pendant word symbol s3 hide counted marker size legend look-alike pro">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#target"/></svg></span><h2>Counting and Find all</h2></div>
+      <p class="sec-intro">Count symbols one tap at a time, or let Find all count every match on the sheet, and then on the rest of the set.</p>
+      <h3>By hand</h3>
+      <p>Choose <span class="ui">Take off</span>, pick a count item and tap each symbol. Each tap adds one, in the item's colour; Undo takes back the last.</p>
+
+      <div class="split">
+        <div>
+          <h3>Find all <span class="pro-badge">PRO</span></h3>
+          <ol class="steps">
+            <li><b>Zoom in</b><span>until one symbol is easy to tap. At full-sheet zoom a fingertip covers several.</span></li>
+            <li><b>Turn on Find all and tap one copy</b><span>of the symbol (<kbd>⌘F</kbd> on a Mac). Pick the item first.</span></li>
+            <li><b>Check the proposals</b><span>Every match on the sheet is ringed. Tap any that isn't one, such as a legend's sample or a look-alike, to leave it out. Tap a symbol it missed to count that too.</span></li>
+            <li><b>Tap Add</b><span>They go in together, and one Undo takes them all back.</span></li>
+            <li><b>All sheets</b><span>looks for the same symbol on the rest of the set and tells you what it found, sheet by sheet, before adding.</span></li>
+          </ol>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/findall.jpg"><img src="img/findall.jpg" width="640" height="1400" alt="Find all proposing two pendant fixture rows, each ringed in green, with Add 2 in the bar" loading="lazy"></a><figcaption>Proposed matches, ringed, waiting for Add.</figcaption></figure>
+      </div>
+      <figure class="shot" style="max-width:460px;margin-inline:auto"><a class="zoom" href="img/allsheets.jpg"><img src="img/allsheets.jpg" width="700" height="360" alt="Found 6 on 1 other sheet, E-102: 6, with Cancel and Add 6" loading="lazy"></a><figcaption>All sheets says what it found before anything is added.</figcaption></figure>
+      <p><b>What Find all handles:</b> symbols turned on the sheet; types that differ only by their tag (AA and AB are kept apart); long fixtures such as pendant rows; symbols drawn as a word (a switch shown as "S3"); fixtures inside a ceiling grid. Symbols you've already counted are skipped.</p>
+      <div class="note tip"><svg class="ic"><use href="icons.svg#bulb"/></svg><p>Find all works best on PDFs exported from CAD. Scanned paper drawings work, but less reliably, so check the proposals closely on a scan.</p></div>
+
+      <h3>See what's left</h3>
+      <ul>
+        <li><b>Hide counted symbols</b> (item menu) covers what you've counted, so the symbols still to count stand out. Turn it off from the same menu.</li>
+        <li><b>Marker size</b> (item menu): Small, Regular or Large, for crowded sheets.</li>
+        <li><b>Show only this item's marks</b> hides the other items while you work.</li>
+      </ul>
+      <h3>Typical floors</h3>
+      <p><span class="ui">Copy this sheet's marks to</span> (Scale menu) copies a sheet's marks onto another sheet of the same size, in the same places. Marks already there aren't copied twice. Or count the floor once and use <span class="ui">Repeat this sheet</span>.</p>
+    </section>
+
+    <!-- Measure -->
+    <section class="g-section" id="measure" data-k="length run area measure trace conduit wall perimeter snap arc curve deduct cutout done cancel">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#shape"/></svg></span><h2>Lengths and areas</h2></div>
+      <p class="sec-intro">Trace runs and areas right on the sheet. Taps snap to the drawing, and each run is labelled with its length.</p>
+      <figure class="shot dark"><a class="zoom" href="img/measure-mac.jpg"><img src="img/measure-mac.jpg" width="1400" height="1050" alt="A conduit run traced on the plan in Tally for Mac, labelled 189 feet 6 inches" loading="lazy"></a><figcaption>A conduit run, snapped to the drawing, on a Mac.</figcaption></figure>
+      <h3>A run</h3>
+      <ol class="steps">
+        <li><b>Pick a length item</b><span>such as 3/4" EMT conduit or a wall type.</span></li>
+        <li><b>Tap the start, then each corner</b><span>The hint tells you which tap comes next.</span></li>
+        <li><b>Tap Done</b><span>(<kbd>⌘↩</kbd> on a Mac; <kbd>⌘.</kbd> cancels the run).</span></li>
+      </ol>
+      <h3>An area</h3>
+      <p>Pick an area item, tap its corners and tap <span class="ui">Done</span>. Areas also total their perimeter.</p>
+      <h3>Drawing options</h3>
+      <ul>
+        <li><b>Snap:</b> taps snap to the drawing's own line ends and lines. Turn <span class="ui">Snap</span> off to place a point anywhere.</li>
+        <li><b>Arc</b> adds a curve: tap a point on the curve, then where it ends.</li>
+        <li><b>Deduct</b> draws a cut-out (shown hatched) that's subtracted from the area, for a shaft or an opening.</li>
+        <li>To change a run or area later, use <a href="#editing">Edit</a>: drag a corner, add one, or remove one.</li>
+      </ul>
+    </section>
+
+    <!-- Rooms -->
+    <section class="g-section" id="rooms" data-k="room rooms all rooms one tap walls area perimeter base trim flooring ceiling pro">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#home"/></svg></span><h2>Rooms in one tap <span class="pro-badge">PRO</span></h2></div>
+      <p class="sec-intro">Tap inside a room and its walls give the outline: the floor area for an area item, or the perimeter for base and trim.</p>
+      <figure class="shot dark"><a class="zoom" href="img/rooms-mac.jpg"><img src="img/rooms-mac.jpg" width="1400" height="1050" alt="All rooms on a sheet outlined in Tally for Mac: 15 rooms, 20,740 SF" loading="lazy"></a><figcaption>All rooms: every room on the sheet, outlined and totalled.</figcaption></figure>
+      <ol class="steps">
+        <li><b>Pick an area or length item</b><span>and set the sheet's scale.</span></li>
+        <li><b>Turn on Room and tap inside a room</b><span>Tally outlines it to the inside faces of its walls, closing off doorways.</span></li>
+        <li><b>Check the outline and tap Add</b></li>
+      </ol>
+      <p><b>All rooms</b> outlines every room on the sheet at once. Tap any you don't want to leave it out, then tap <span class="ui">Add</span>. One Undo removes them all.</p>
+      <div class="note"><svg class="ic"><use href="icons.svg#info"/></svg><p>Rooms open to a corridor through a wide opening, or drawn without closed walls, may need tracing by hand. Scanned sheets work too.</p></div>
+    </section>
+
+    <!-- Zones -->
+    <section class="g-section" id="zones" data-k="zone zones floor level phase alternate area breakdown subtotal">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#grid"/></svg></span><h2>Zones</h2></div>
+      <p class="sec-intro">Zones split quantities by floor, area, phase or alternate, with a subtotal for each.</p>
+      <ul>
+        <li><b>Add a zone</b> from the item menu (<span class="ui">Add a zone (floor, area, phase)</span>), or from the zone menu once you have some.</li>
+        <li><b>Marks go in the zone you've picked,</b> and the items panel totals that zone. Pick <span class="ui">All zones</span> for the whole job.</li>
+        <li><b>A whole floor at once:</b> <span class="ui">Put this sheet's marks in zone</span> (Scale menu). In Edit, <span class="ui">Move to zone</span> reassigns the marks you've picked.</li>
+        <li><b>Manage zones</b> renames, reorders or deletes them. Deleting a zone keeps its marks.</li>
+        <li>Exports add a breakdown by zone.</li>
+      </ul>
+    </section>
+
+    <!-- Markup -->
+    <section class="g-section" id="markup" data-k="markup cloud arrow callout note highlight pen pencil stamp approved photo picture dimension angle style colour line weight punch list resolved">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#pen"/></svg></span><h2>Markup</h2></div>
+      <p class="sec-intro">Choose <span class="ui">Markup</span>, then the kind from the markup menu. Markups never change your quantities.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Markup</th><th>How</th></tr></thead>
+        <tbody>
+          <tr><td>Cloud</td><td>Two taps, at opposite corners: a revision cloud.</td></tr>
+          <tr><td>Arrow, Highlight</td><td>Two taps.</td></tr>
+          <tr><td>Callout</td><td>Two taps, with its text. With the callout picked in Edit, <span class="ui">Add leader</span> points it at one more spot.</td></tr>
+          <tr><td>Note</td><td>One tap, with its text.</td></tr>
+          <tr><td>Pen</td><td>Write or sketch with Apple Pencil, a finger or the mouse. Strokes drawn nearly straight become straight lines (turn that off in the Style menu). A tap makes a dot.</td></tr>
+          <tr><td>Stamp</td><td>One tap: APPROVED, APPROVED AS NOTED, REVISE AND RESUBMIT, REJECTED, FIELD VERIFY, NOT IN CONTRACT, PUNCH, COMPLETE, or your own (<span class="ui">New stamp</span>).</td></tr>
+          <tr><td>Photo</td><td>Tap a spot, then take a photo, pick one from your library, or choose a file. It's pinned there with an optional caption.</td></tr>
+          <tr><td>Dimension</td><td>Two taps: reads the length at the sheet's scale.</td></tr>
+          <tr><td>Angle</td><td>Three taps (one side's end, the corner, the other side's end): reads the degrees.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="split">
+        <div>
+          <ul>
+            <li><b>Style:</b> each kind of markup keeps its own colour and line weight, in every takeoff, until you change it.</li>
+            <li><b>Edit text</b> (in Edit) changes a note, callout, stamp or caption.</li>
+            <li><b>Photos</b> live inside the takeoff. With Move, tap a photo's pin to see it, share it or caption it. They're listed at the end of the PDF report and the plan PDF.</li>
+            <li><b>Pen with Apple Pencil:</b> once a Pencil has drawn (or with iPadOS's Only Draw with Apple Pencil on), fingers move the sheet, as in Notes.</li>
+          </ul>
+          <h3>The punch list</h3>
+          <p>The <span class="ui">Markups</span> button at the top lists every markup by sheet. Tap the circle to mark one resolved, or the row to go to it. <span class="ui">Show resolved</span> brings back the ones you've closed. Export it as a CSV punch list.</p>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/markups.jpg"><img src="img/markups.jpg" width="800" height="898" alt="The Markups list: clouds, notes, pen strokes and FIELD VERIFY stamps grouped by sheet, each with a circle to resolve it" loading="lazy"></a><figcaption>Markups by sheet, each with a circle to resolve it.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Editing -->
+    <section class="g-section" id="editing" data-k="edit move drag handle corner select area box copy paste cut delete undo redo erase another takeoff">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#pointer"/></svg></span><h2>Editing, copy and paste</h2></div>
+      <p class="sec-intro">Choose <span class="ui">Edit</span> and tap a mark or markup to pick it.</p>
+      <ul>
+        <li><b>Move a point:</b> drag one of its handles. <b>Move the whole thing:</b> drag the mark itself. One Undo puts it back.</li>
+        <li><b>Corners:</b> with a run or area picked, tap its line to add a corner there; drag a corner onto the next one to remove it.</li>
+        <li><b>Select area:</b> drag a box to pick everything inside it. Drag any of them to move them together, or Copy, Delete, Move to zone or restyle them.</li>
+        <li><b>Copy and Paste</b> work across sheets and takeoffs. Pasted on another sheet, marks land in the same place; in another takeoff, they go to its item of the same name. Pasted marks go in the zone you're working in, so a typical floor copied onto the next sheet counts for that floor.</li>
+        <li><b>Erase</b> removes what you tap. <b>Delete</b> removes what you've picked (<kbd>⌘⌫</kbd> on a Mac).</li>
+        <li><b>Undo and Redo</b> step through every change (<kbd>⌘Z</kbd>, <kbd>⇧⌘Z</kbd>).</li>
+      </ul>
+      <div class="note"><svg class="ic"><use href="icons.svg#command"/></svg><p>On a Mac, <kbd>⌘C</kbd>, <kbd>⌘V</kbd> and <kbd>⌘X</kbd> work on marks in Edit, and <kbd>⌘A</kbd> picks everything on the sheet.</p></div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="g-section" id="pricing" data-k="price pricing cost bid overhead profit tax contingency fixed amount permit rental allowance spreadsheet supplier price list csv excel markup total">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#dollar"/></svg></span><h2>Pricing the bid</h2></div>
+      <p class="sec-intro">Prices live with the items, and the bid adds your markups on top, all updating as you count.</p>
+      <div class="split">
+        <div>
+          <h3>Item prices</h3>
+          <p>Each item has a unit cost and a waste %, plus the price of any materials that go with it. The items panel shows each item's cost and the takeoff total as you work.</p>
+          <h3>Overhead, profit and tax</h3>
+          <ol class="steps">
+            <li><b>Tap Add overhead, profit and tax</b><span>under the total in the items panel.</span></li>
+            <li><b>Enter percentages</b><span>for contingency, overhead, profit and tax. Return (or Next above the number pad) moves to the next one.</span></li>
+            <li><b>Add fixed amounts</b><span>for costs you don't measure, such as a permit or a lift rental. The percentages apply to them too.</span></li>
+          </ol>
+          <p>The bid total appears under the takeoff total, and in every export.</p>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/bid.jpg"><img src="img/bid.jpg" width="800" height="867" alt="The Bid sheet: takeoff cost, fixed amounts, contingency 5%, overhead 10%, profit 12%, tax 8.25% and the bid total" loading="lazy"></a><figcaption>The bid: percentages and fixed amounts on top of the takeoff cost.</figcaption></figure>
+      </div>
+      <h3>Prices from a spreadsheet</h3>
+      <p><span class="ui">Update prices from a spreadsheet</span> (under the total) sets the price of every item and material a price list names, in one step. One Undo puts the old prices back.</p>
+      <ul>
+        <li><b>A supplier's price list:</b> save it as CSV. Tally finds the name column (headed Item, Material, Name or Description) and the price column (headed Unit cost, Price or Cost). Without headings, the first column is the name and the first number after it is the price.</li>
+        <li><b>Your own takeoff:</b> export it as CSV, change the prices in Excel or Numbers, save it as CSV again, and read it back in.</li>
+        <li>Commas, semicolons or tabs, currency signs and thousands separators are all fine. Names match whatever their capitals and spacing, and Tally tells you which names it couldn't find.</li>
+      </ul>
+    </section>
+
+    <!-- Exports -->
+    <section class="g-section" id="exports" data-k="export excel xlsx csv pdf report plan pdf bluebeam acrobat annotations punch list print share mail airdrop files save language pro">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#share"/></svg></span><h2>Exports and printing <span class="pro-badge">PRO</span></h2></div>
+      <p class="sec-intro">Tap the export button at the top of the screen and choose what to send.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Export</th><th>What you get</th></tr></thead>
+        <tbody>
+          <tr><td>Excel workbook</td><td>Live totals: change a price or a percentage in Excel and the bid updates. Sheets for materials, zones, sheets and markups.</td></tr>
+          <tr><td>Quantities (CSV)</td><td>Every item's quantity, waste and cost, for Excel or your estimating software.</td></tr>
+          <tr><td>PDF report</td><td>A quantity summary, the bid, every marked-up sheet with its own quantities, and your photos.</td></tr>
+          <tr><td>Plan PDF with markups</td><td>The plan set with your marks and markups as standard PDF annotations that Bluebeam, Acrobat and Preview list and edit, followed by your photos.</td></tr>
+          <tr><td>Markups as a punch list</td><td>A CSV of every markup in sheet order: sheet, type, text, open or resolved, and the date.</td></tr>
+          <tr><td>Takeoff file</td><td>The whole takeoff in one file, for someone else with Tally. <a href="#sharing">Sending a takeoff</a></td></tr>
+          <tr><td>Print</td><td><span class="ui">Print this sheet</span> (the sheet on screen with its marks and quantities) or <span class="ui">Print the report</span>. <kbd>⌘P</kbd> on a Mac.</td></tr>
+        </tbody>
+      </table></div>
+      <div class="split narrow-fig">
+        <div>
+          <p>On iPhone and iPad an export opens the share sheet: send it by Mail or Messages, AirDrop it, or save it to Files. On a Mac you choose where to save it.</p>
+          <p>Exports are written in the language Tally is in, English or Spanish, with your own item names as you typed them.</p>
+          <div class="note tip"><svg class="ic"><use href="icons.svg#bulb"/></svg><p>Need English exports from a phone set to Spanish? Set Tally's own language to English in Settings › Apps › Tally.</p></div>
+        </div>
+        <figure class="shot"><a class="zoom" href="img/share.jpg"><img src="img/share.jpg" width="640" height="640" alt="The share sheet for an exported takeoff spreadsheet, with Copy and Save to Files" loading="lazy"></a><figcaption>An export on iPad goes through the share sheet.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Sharing -->
+    <section class="g-section" id="sharing" data-k="send share colleague team takeoff file tallytakeoff airdrop mail open receive replace keep both">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#send"/></svg></span><h2>Sending a takeoff</h2></div>
+      <p class="sec-intro">Hand a whole takeoff, with its plans, items, marks, markups and photos, to someone else who uses Tally.</p>
+      <ol class="steps">
+        <li><b>Export › Takeoff file</b><span>Tally packs the takeoff into one file (it ends in .tallytakeoff).</span></li>
+        <li><b>Send it</b><span>by Mail, Messages or AirDrop, or put it in a shared folder.</span></li>
+        <li><b>They open it</b><span>by tapping it, choosing Open in Tally, dropping it on the library or importing it. It becomes a takeoff of their own. Opening one doesn't need Tally Pro.</span></li>
+      </ol>
+      <p>If they already have that takeoff (you sent it before), Tally asks whether to <span class="ui">Replace yours</span> or <span class="ui">Keep both</span>. A replaced copy goes to Recently Deleted, so nothing is lost.</p>
+      <div class="note"><svg class="ic"><use href="icons.svg#info"/></svg><p>Each person works on their own copy; two people can't edit one takeoff at the same time. Your own devices share one copy through <a href="#icloud">iCloud</a>.</p></div>
+    </section>
+
+    <!-- Revisions -->
+    <section class="g-section" id="revisions" data-k="revision revised set addendum replace compare changes red blue overlay">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#refresh"/></svg></span><h2>Revised sets</h2></div>
+      <p class="sec-intro">Move a takeoff onto an addendum or revision without starting over.</p>
+      <ol class="steps">
+        <li><b>In the library, press and hold the takeoff</b><span>and choose <span class="ui">Replace with revised set</span>, then pick the new PDF.</span></li>
+        <li><b>Marks follow their sheets by sheet number,</b><span>even if sheets were added or reordered. Tally tells you about marks on any sheet the revision drops.</span></li>
+        <li><b>Compare</b><span>(at the top of the screen; in the More menu on iPhone) overlays a sheet on the version it replaced: removed in red, added in blue.</span></li>
+      </ol>
+      <p>The previous plan and takeoff are kept, with the photos of any sheet the revision drops.</p>
+    </section>
+
+    <!-- iCloud -->
+    <section class="g-section" id="icloud" data-k="icloud sync devices offline keep on this device storage two devices merge">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#cloud"/></svg></span><h2>iCloud</h2></div>
+      <p class="sec-intro">Signed in to iCloud, your takeoffs appear on each of your iPhone, iPad and Mac with the same Apple Account.</p>
+      <ul>
+        <li><b>Your own account:</b> takeoffs are kept in your iCloud, not on any server of ours. Plans and photos go with them, so a takeoff works without a connection once it has arrived.</li>
+        <li><b>Live:</b> changes made on one device show up on the others while the takeoff is open.</li>
+        <li><b>Offline:</b> if two devices changed a takeoff while apart, the copies are combined mark by mark, keeping the latest change of each. Something deleted on one stays deleted.</li>
+        <li><b>Big sets</b> take as long as their download to appear on another device. The iCloud button in the library says how many are still downloading.</li>
+        <li><b>One device only:</b> tap the iCloud button and choose <span class="ui">Keep on This Device Only</span>. The takeoffs are copied to the device and stay in iCloud for your other devices. <span class="ui">Keep in iCloud</span> puts them back, combined with the copies there.</li>
+        <li>If another device replaces the plan with a revised set, or deletes the takeoff while you have it open, Tally says so; open the takeoff again to go on.</li>
+      </ul>
+    </section>
+
+    <!-- Devices -->
+    <section class="g-section" id="devices" data-k="ipad mac pencil apple pencil double tap squeeze window windows drag drop keyboard menu help">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#monitor"/></svg></span><h2>iPad, Mac and Apple Pencil</h2></div>
+      <p class="sec-intro">One app on every device, with what each does best.</p>
+      <ul>
+        <li><b>Windows:</b> <span class="ui">Open in New Window</span> shows a sheet in a window of its own beside the one you're taking off, with marks updating live. Handy for a schedule sheet next to the plan.</li>
+        <li><b>Drag and drop</b> a PDF onto the library to import it.</li>
+        <li><b>Apple Pencil:</b> a double-tap, or a squeeze of Apple Pencil Pro, does what your Pencil settings say: switch to the eraser and back, or to the last tool you used.</li>
+        <li><b>Pen:</b> after an Apple Pencil has drawn, only the Pencil draws and fingers move the sheet, as in Notes.</li>
+        <li><b>On a Mac,</b> every tool is in the Tools menu, and the Help menu has this guide, support, and your Tally Pro subscription.</li>
+      </ul>
+    </section>
+
+    <!-- Shortcuts -->
+    <section class="g-section" id="shortcuts" data-k="keyboard shortcuts keys command mac">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#command"/></svg></span><h2>Keyboard shortcuts</h2></div>
+      <p class="sec-intro">On a Mac, and from a keyboard attached to an iPad.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Keys</th><th>Does</th></tr></thead>
+        <tbody>
+          <tr><td><kbd>⌘1</kbd> … <kbd>⌘6</kbd></td><td>Move, Take off, Markup, Edit, Erase, Calibrate</td></tr>
+          <tr><td><kbd>⌘F</kbd></td><td>Find all</td></tr>
+          <tr><td><kbd>⌘↩</kbd> / <kbd>⌘.</kbd></td><td>Finish / cancel the run or area you're drawing</td></tr>
+          <tr><td><kbd>⌘Z</kbd> / <kbd>⇧⌘Z</kbd></td><td>Undo / Redo</td></tr>
+          <tr><td><kbd>⌘C</kbd> <kbd>⌘X</kbd> <kbd>⌘V</kbd></td><td>Copy, cut, paste marks (in Edit)</td></tr>
+          <tr><td><kbd>⌘A</kbd></td><td>Pick everything on the sheet (in Edit)</td></tr>
+          <tr><td><kbd>⌘⌫</kbd></td><td>Delete what's picked (Mac)</td></tr>
+          <tr><td><kbd>⌘←</kbd> / <kbd>⌘→</kbd></td><td>Previous / next sheet</td></tr>
+          <tr><td><kbd>⌘+</kbd> <kbd>⌘−</kbd> <kbd>⌘0</kbd></td><td>Zoom in, zoom out, fit the sheet</td></tr>
+          <tr><td><kbd>⌘R</kbd></td><td>Rotate the sheet</td></tr>
+          <tr><td><kbd>⌥⌘N</kbd></td><td>Open the sheet in a new window</td></tr>
+          <tr><td><kbd>⌘P</kbd></td><td>Print this sheet</td></tr>
+        </tbody>
+      </table></div>
+    </section>
+
+    <!-- Pro -->
+    <section class="g-section" id="pro" data-k="pro subscription price trial free cancel restore manage purchase monthly yearly">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#star"/></svg></span><h2>Tally Pro</h2></div>
+      <p class="sec-intro">Counting and measuring are free. Tally Pro adds what turns a takeoff into a bid.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free</h3>
+          <p class="price">No account, no time limit.</p>
+          <ul>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Import and organise plan sets</li>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Scales, printed and calibrated</li>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Count by hand, runs and areas</li>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Zones, markups, photos and the punch list</li>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Pricing and the bid</li>
+            <li><svg class="ic"><use href="icons.svg#check"/></svg>Revised sets, Compare and iCloud</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <h3>Tally Pro <span class="pro-badge">PRO</span></h3>
+          <p class="price">Monthly or yearly, with a 7-day free trial.</p>
+          <ul>
+            <li><svg class="ic"><use href="icons.svg#star"/></svg>Find all, on a sheet and the whole set</li>
+            <li><svg class="ic"><use href="icons.svg#star"/></svg>Room and All rooms</li>
+            <li><svg class="ic"><use href="icons.svg#star"/></svg>Excel, CSV and the PDF report</li>
+            <li><svg class="ic"><use href="icons.svg#star"/></svg>Plan PDF with markups and the punch list</li>
+            <li><svg class="ic"><use href="icons.svg#star"/></svg>Takeoff files and printing</li>
+          </ul>
+        </div>
+      </div>
+      <ul>
+        <li><b>One subscription, every device:</b> Tally Pro covers your iPhone, iPad and Mac with the same Apple Account.</li>
+        <li><b>Manage or cancel:</b> <span class="ui">Help</span> in the library (the Help menu on a Mac; the More menu in a takeoff on iPhone) › <span class="ui">Manage subscription</span>. Or Settings › your name › Subscriptions. Cancel at least 24 hours before the period ends.</li>
+        <li><b>New device?</b> <span class="ui">Help</span> › <span class="ui">Restore purchases</span>.</li>
+        <li>If you stop subscribing, your takeoffs stay as they are and everything free keeps working.</li>
+      </ul>
+    </section>
+
+    <!-- Access -->
+    <section class="g-section" id="access" data-k="language spanish español accessibility voiceover larger text dark mode">
+      <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#globe"/></svg></span><h2>Languages and accessibility</h2></div>
+      <ul>
+        <li><b>English and Spanish:</b> Tally follows your device's language. To use another for Tally alone, go to Settings › Apps › Tally › Language.</li>
+        <li><b>VoiceOver</b> reads Tally's buttons and items, and announces each hint, such as how many matches Find all proposed.</li>
+        <li><b>Larger text</b> and <b>dark mode</b> follow your device's settings.</li>
+      </ul>
+      <div class="note"><svg class="ic"><use href="icons.svg#mail"/></svg><p>Something unclear, or missing from this guide? <a class="mail" href="./#contact">Email us</a> and we'll answer, and improve the guide.</p></div>
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="in">
+    <a class="brand" href="./"><img src="icon.png" alt=""><span>Construction Takeoff - Tally</span></a>
+    <nav aria-label="Footer"><a href="./">Support</a><a href="guide.html">User guide</a><a href="./#faq">FAQ</a><a href="privacy.html">Privacy Policy</a></nav>
+  </div>
+</footer>
+<button class="totop" type="button" aria-label="Back to top"><svg class="ic"><use href="icons.svg#up"/></svg></button>
+<script src="site.js"></script>
 </body>
 </html>
