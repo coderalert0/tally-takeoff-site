@@ -97,10 +97,10 @@
     <!-- Quick start -->
     <section class="g-section" id="quick-start" data-k="start begin tutorial first new import">
       <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#zap"/></svg></span><h2>Your first takeoff</h2></div>
-      <p class="sec-intro">From a plan set PDF to priced quantities in seven steps. No plans at hand? Tap <span class="ui">Try the sample plan</span> in an empty library and follow along on a real electrical sheet. Every Tally Pro feature works on it.</p>
+      <p class="sec-intro">From a plan set PDF to priced quantities in seven steps. No plans at hand? Tap <span class="ui">Try the sample plan</span> in an empty library and follow along on a real electrical sheet. It opens at its printed scale, with the lighting plan's items first, so the first tap counts; every Tally Pro feature works on it.</p>
       <ol class="steps">
         <li><b>Import your plans</b><span>In the library, tap <span class="ui">+</span>, choose the starter list for your trade (or Blank), then pick the plan set PDF. A photo or scan of a single sheet works too.</span></li>
-        <li><b>Set the scale</b><span>Most sheets print their scale, and Tally offers it in one tap when you start taking off. You can also pick it from the scale button at the top, or calibrate from any dimension. <a href="#scale">More on scale</a></span></li>
+        <li><b>Set the scale</b><span>Most sheets print their scale, and Tally offers it in one tap when you start taking off; a sheet that prints none (a photo, a sketch) offers Calibrate instead. You can also pick it from the scale button at the top, or calibrate from any dimension. <a href="#scale">More on scale</a></span></li>
         <li><b>Pick an item</b><span>Choose <span class="ui">Take off</span> in the tool bar, then tap an item in the items panel (or pick one from the item button under the tools). Add your own with <span class="ui">Add item</span>.</span></li>
         <li><b>Count</b><span>Tap each symbol. Or zoom in, turn on <span class="ui">Find all</span> and tap one: every match on the sheet is proposed for you to check and add. <a href="#counting">How Find all works</a></span></li>
         <li><b>Measure</b><span>For a length, tap along the run and tap <span class="ui">Done</span>. For an area, tap its corners and tap <span class="ui">Done</span>. Taps snap to the drawing's lines. <a href="#measure">Lengths and areas</a></span></li>
@@ -200,7 +200,7 @@
     </section>
 
     <!-- Sheets -->
-    <section class="g-section" id="sheets" data-k="sheet browser thumbnails sheet number title block search text find rotate window links reference detail scan ocr">
+    <section class="g-section" id="sheets" data-k="sheet browser thumbnails sheet number title block search text find rotate repeat typical floor window links reference detail scan ocr">
       <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#layers"/></svg></span><h2>Sheets and search</h2></div>
       <p class="sec-intro">Tally reads each sheet's number from its title block, so you can find E-101 the way you would in a paper set.</p>
       <ul>
@@ -210,13 +210,14 @@
         <li><b>Search the plans:</b> type in the sheet browser to find a sheet by number, or any text on the plans: a fixture tag, a room name, a note. A result opens its sheet zoomed to the text, highlighted.</li>
         <li><b>Scanned sets</b> have no text to search at first, so Tally reads each scanned sheet the first time you search (a few seconds a sheet) and keeps what it read. Later searches are instant.</li>
         <li><b>Jump along references:</b> with <span class="ui">Move</span>, tap a sheet number written on a plan, such as SEE E-501 or a detail's 3/E-501, to open that sheet.</li>
-        <li><b>Rotate sheet</b> (Scale menu, <kbd>⌘R</kbd>) turns a sheet that's stored sideways, a quarter turn at a time. The plan file isn't changed, and marks stay where they are on the drawing.</li>
+        <li><b>The This sheet menu</b> (beside the sheet button; in <span class="ui">More</span> on iPhone) has the sheet's own tools: <b>Repeat this sheet (typical floor)</b> counts its quantities more than once, for a floor that repeats; <b>Copy this sheet's marks to</b> copies them onto another sheet of the same size; <b>Put this sheet's marks in zone</b> moves them all into a zone.</li>
+        <li><b>Rotate sheet</b> (This sheet menu, <kbd>⌘R</kbd>) turns a sheet that's stored sideways, a quarter turn at a time. The plan file isn't changed, and marks stay where they are on the drawing.</li>
         <li><b>Two sheets side by side</b> (iPad and Mac): <span class="ui">Open in New Window</span> (<kbd>⌥⌘N</kbd>, or press and hold a thumbnail in the sheet browser) shows a sheet in a window of its own, with your marks updating live as you work in the other.</li>
       </ul>
     </section>
 
     <!-- Scale -->
-    <section class="g-section" id="scale" data-k="scale calibrate printed architectural engineering metric 1:50 units feet metres meters dimension half size check typical floor repeat">
+    <section class="g-section" id="scale" data-k="scale calibrate printed architectural engineering metric 1:50 units feet metres meters dimension half size check">
       <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#ruler"/></svg></span><h2>Scale</h2></div>
       <p class="sec-intro">Every sheet has its own scale. Lengths, areas, rooms and dimensions need one; counting doesn't.</p>
       <div class="split">
@@ -224,7 +225,7 @@
           <h3>The fastest way: the scale the sheet prints</h3>
           <p>Tally reads the scale printed on each sheet, such as <code>SCALE: 1/8" = 1'-0"</code>, <code>1" = 20'</code>, or <code>1:50</code> under a view on a metric sheet, scans included.</p>
           <ul>
-            <li>On a sheet with no scale yet, Take off offers the printed scale in one tap.</li>
+            <li>On a sheet with no scale yet, Take off offers the printed scale in one tap; with other sheets still without one, the next tap offers <span class="ui">Use each sheet's printed scale</span>.</li>
             <li>The Scale menu lists it first, under <span class="ui">Printed on this sheet</span>. A sheet that prints several (a plan and its details) lists them all: pick the one for the view you're taking off.</li>
             <li><span class="ui">Use each sheet's printed scale</span> sets every sheet that has no scale yet from the one scale it prints, in a single step (one Undo). Sheets that print several, or none, are left for you, and Tally says how many.</li>
           </ul>
@@ -245,7 +246,6 @@
       <ul>
         <li><b>Architectural, Engineering and Metric</b> list the usual scales (metric ones from 1:1 to 1:2500).</li>
         <li><b>Use this scale on all sheets</b> copies this sheet's scale to the rest of the set.</li>
-        <li><b>Repeat this sheet (typical floor)</b> counts a sheet's quantities more than once, for a floor that repeats.</li>
         <li><b>Remove scale</b> clears it.</li>
         <li><b>Units</b> shows the takeoff in feet (LF, SF, cubic yards) or metres (m, m², m³). New takeoffs start in your region's units. Prices, totals and exports follow, and switching never changes a total.</li>
       </ul>
@@ -255,7 +255,7 @@
     <!-- Items -->
     <section class="g-section" id="items" data-k="item add edit cost waste color colour materials assembly wall height roof pitch depth volume cubic yards extra per run drops duplicate move marks filter find an item">
       <div class="sec-head"><span class="tile"><svg class="ic"><use href="icons.svg#list"/></svg></span><h2>Items</h2></div>
-      <p class="sec-intro">An item is what you're taking off: a fixture type, a conduit size, a wall type, a floor finish. Each has a colour on the plan and a total in the items panel.</p>
+      <p class="sec-intro">An item is what you're taking off: a fixture type, a conduit size, a wall type, a floor finish. Each has a colour on the plan and a total in the items panel; the item button under the tools shows the chosen item's total too, so a count is in view on iPhone with the panel hidden (with a zone picked, that zone's count, named: “0 EA in Level 2”).</p>
       <div class="split">
         <div>
           <h3>Add or change an item</h3>
@@ -315,7 +315,7 @@
         <li><b>Show only this item's marks</b> hides the other items while you work.</li>
       </ul>
       <h3>Typical floors</h3>
-      <p><span class="ui">Copy this sheet's marks to</span> (Scale menu) copies a sheet's marks onto another sheet of the same size, in the same places. Marks already there aren't copied twice. Or count the floor once and use <span class="ui">Repeat this sheet</span>.</p>
+      <p><span class="ui">Copy this sheet's marks to</span> (This sheet menu) copies a sheet's marks onto another sheet of the same size, in the same places. Marks already there aren't copied twice. Or count the floor once and use <span class="ui">Repeat this sheet</span>.</p>
     </section>
 
     <!-- Measure -->
@@ -361,7 +361,7 @@
       <ul>
         <li><b>Add a zone</b> from the item menu (<span class="ui">Add a zone (floor, area, phase)</span>), or from the zone menu once you have some.</li>
         <li><b>Marks go in the zone you've picked,</b> and the items panel totals that zone. Pick <span class="ui">All zones</span> for the whole job.</li>
-        <li><b>A whole floor at once:</b> <span class="ui">Put this sheet's marks in zone</span> (Scale menu). In Edit, <span class="ui">Move to zone</span> reassigns the marks you've picked.</li>
+        <li><b>A whole floor at once:</b> <span class="ui">Put this sheet's marks in zone</span> (This sheet menu). In Edit, <span class="ui">Move to zone</span> reassigns the marks you've picked.</li>
         <li><b>Manage zones</b> renames, reorders or deletes them. Deleting a zone keeps its marks.</li>
         <li>Exports add a breakdown by zone.</li>
       </ul>
