@@ -1,0 +1,25 @@
+# Construction Takeoff - Tally
+
+> A construction takeoff app for iPad, iPhone and Mac: open a plan set PDF, set the scale, count, measure, mark up and price it on the sheet.
+
+App Store: https://apps.apple.com/us/app/id6822083779
+
+## Facts
+- Platforms: iPad and iPhone (iOS 17 or later) and Mac (macOS 14 or later). One App Store purchase covers them.
+- Opens PDF plan sets, and JPEG, PNG or HEIC plan images. Works offline with no account; takeoffs sync through the user's own iCloud.
+- Set scale from the sheet's printed scale, architectural or engineering presets, or calibration from a dimension; metric supported.
+- Counts, linear runs with arcs, areas with cut-outs, wall height, roof pitch, volumes in cubic yards, assemblies, waste, overhead, profit and tax, zones.
+- Markup: cloud, arrow, callout, note, highlight, pen, stamp, photo, dimension; tracked as a punch list.
+- Free: counting, measuring, markup and pricing on up to three takeoffs at a time; every Pro feature works on the sample plan.
+- Tally Pro (monthly or yearly subscription, 7-day free trial): Find all, rooms in one tap, exports (Excel, CSV, PDF report, marked-up plan), printing, revised sets, unlimited takeoffs.
+- In English and Spanish.
+
+## Pages
+- [Home and support](https://coderalert0.github.io/tally-takeoff-site/)
+- [User guide](https://coderalert0.github.io/tally-takeoff-site/guide.html)
+- [Privacy](https://coderalert0.github.io/tally-takeoff-site/privacy.html)
+- [How to do a takeoff from a PDF plan on an iPad](https://coderalert0.github.io/tally-takeoff-site/pdf-takeoff-on-ipad.html): Step by step: open the plan set, set each sheet's scale, count, measure runs and areas, price it and export. On an iPad, iPhone or Mac.
+- [Architectural and engineering plan scales, and how to set them](https://coderalert0.github.io/tally-takeoff-site/plan-scales.html): What 1/4" = 1'-0" and 1" = 20' mean as ratios, how far an inch on the sheet is, and why a half-size set measures wrong.
+- [How to get cubic yards of concrete from a plan](https://coderalert0.github.io/tally-takeoff-site/concrete-cubic-yards-from-plans.html): Area times depth over 324: the formula, how many square feet a cubic yard covers at each depth, footings and walls, and waste.
+- [How to do a drywall takeoff from a floor plan](https://coderalert0.github.io/tally-takeoff-site/drywall-takeoff-from-plans.html): Wall length times height times sides, less openings, plus ceilings, divided by the sheet's area. With sheet sizes and a worked example.
+- [How to count fixtures and devices on electrical plans](https://coderalert0.github.io/tally-takeoff-site/count-symbols-on-electrical-plans.html): Read the legend, count one symbol at a time, sheet by sheet, and catch what is missed: type letters, look-alikes, enlarged plans and risers.

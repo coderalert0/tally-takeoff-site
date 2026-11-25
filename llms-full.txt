@@ -1,0 +1,75 @@
+# Construction Takeoff - Tally
+
+- Platforms: iPad and iPhone (iOS 17 or later) and Mac (macOS 14 or later). One App Store purchase covers them.
+- Opens PDF plan sets, and JPEG, PNG or HEIC plan images. Works offline with no account; takeoffs sync through the user's own iCloud.
+- Set scale from the sheet's printed scale, architectural or engineering presets, or calibration from a dimension; metric supported.
+- Counts, linear runs with arcs, areas with cut-outs, wall height, roof pitch, volumes in cubic yards, assemblies, waste, overhead, profit and tax, zones.
+- Markup: cloud, arrow, callout, note, highlight, pen, stamp, photo, dimension; tracked as a punch list.
+- Free: counting, measuring, markup and pricing on up to three takeoffs at a time; every Pro feature works on the sample plan.
+- Tally Pro (monthly or yearly subscription, 7-day free trial): Find all, rooms in one tap, exports (Excel, CSV, PDF report, marked-up plan), printing, revised sets, unlimited takeoffs.
+- In English and Spanish.
+
+## How to do a takeoff from a PDF plan on an iPad
+
+Open the plan set PDF in a takeoff app, set the scale of each sheet before measuring anything on it, then go trade by trade: count what is counted, trace what is measured in feet, outline what is measured in square feet. Check one known dimension on every sheet.
+
+Get the PDF, not a picture of it. A plan set saved from CAD has lines an app can snap to. A scan or a photo can still be measured, but taps land where you put them. Import it and pick an item list for your trade, so you are not typing item names on a ladder. Set the scale of each sheet. Use the scale printed on the sheet, or calibrate from a dimension you trust. Details and enlarged plans on the same sheet often have their own scale. Check it. Measure a second printed dimension. If it is off, the sheet was resized: calibrate from the dimension instead. Count symbols one item at a time across the sheet, so a missed corner shows. Measure runs (conduit, pipe, base, wall) by tapping along them, and areas (floor, slab, roof) by their corners. Cut out openings. Split by floor or area if you will be asked for it; it is far quicker now than later. Price and export. Add unit costs and waste, then overhead, profit and tax, and send the quantities to Excel or as a marked-up plan. In Tally Tally does each of these on iPad, iPhone and Mac, offline, with no account. Taps snap to the drawing's own lines. Counting, measuring, markup and pricing are free on up to three takeoffs at a time; Find all, rooms in one tap and exports are in Tally Pro, a subscription with a 7-day free trial.
+
+Q: Can I do a takeoff on an iPhone?
+A: Yes. Counting works well on a phone; tracing long runs is easier on an iPad or a Mac.
+Q: Do I need an internet connection?
+A: Not with Tally: the plan and the takeoff are on the device.
+Q: What if the plan is a scan?
+A: Calibrate from a printed dimension, and check a second one near the opposite corner: scans can be stretched.
+
+## Architectural and engineering plan scales, and how to set them
+
+A scale says how much real length one inch of the sheet stands for. 1/4" = 1'-0" means one inch is 4 feet, a ratio of 1:48. 1" = 20' means one inch is 20 feet, 1:240. If the sheet was printed or saved at another size, the printed scale is wrong: calibrate from a dimension.
+
+Architectural scales Scale Ratio One inch on the sheet is 3" = 1'-0" 1:4 4 in 1 1/2" = 1'-0" 1:8 8 in 1" = 1'-0" 1:12 1 ft 3/4" = 1'-0" 1:16 1 ft 4 in 1/2" = 1'-0" 1:24 2 ft 3/8" = 1'-0" 1:32 2 ft 8 in 1/4" = 1'-0" 1:48 4 ft 3/16" = 1'-0" 1:64 5 ft 4 in 1/8" = 1'-0" 1:96 8 ft 3/32" = 1'-0" 1:128 10 ft 8 in 1/16" = 1'-0" 1:192 16 ft Engineering scales Scale Ratio One inch on the sheet is 1" = 10' 1:120 10 ft 1" = 20' 1:240 20 ft 1" = 30' 1:360 30 ft 1" = 40' 1:480 40 ft 1" = 50' 1:600 50 ft 1" = 60' 1:720 60 ft 1" = 100' 1:1200 100 ft Half-size sets An ARCH D sheet (36 by 24 in) printed on 17 by 11 in paper is a little under half size. On an exact half-size print, 1/4" = 1'-0" measures as 1/8" = 1'-0", so a length taken at the printed scale comes out half what it is, and an area a quarter. Look for a graphic scale bar: it shrinks with the sheet, so it stays true. How to check a scale Find the longest dimension string on the sheet. Measure it at the scale you set. Off by a fixed factor: the sheet was resized, so calibrate from that dimension. Right across and wrong up and down: the scan is stretched. Measure in each direction from a dimension in that direction. In Tally Tally offers the scale printed on the sheet in one tap, the architectural and engineering presets, and calibration from a dimension typed as 20', 20' 6" or 3.5 m. A scale can be copied to every sheet.
+
+Q: What ratio is 1/8" = 1'-0"?
+A: 1:96. One inch on the sheet is 8 feet.
+Q: What does NTS mean?
+A: Not to scale: do not measure it. Use the dimensions written on it.
+Q: Why are my areas about a quarter of what they should be?
+A: The sheet is at half size and measured at its full-size scale. Lengths come out half, so areas come out a quarter.
+
+## How to get cubic yards of concrete from a plan
+
+Cubic yards = area in square feet × depth in inches ÷ 324. A 4 inch slab takes one cubic yard for every 81 square feet. (324 is 27 cubic feet in a yard times 12 inches in a foot.)
+
+What a cubic yard covers Depth Square feet per cubic yard Cubic yards for 1,000 sq ft 3 in 108 9.26 3.5 in 92.6 10.80 4 in 81 12.35 5 in 64.8 15.43 6 in 54 18.52 8 in 40.5 24.69 10 in 32.4 30.86 12 in 27 37.04 Footings, walls and pads Element Measure on the plan Cubic yards Continuous footing Length in feet length × width (ft) × depth (ft) ÷ 27 Foundation wall Length in feet length × height (ft) × thickness (in) ÷ 324 Pad or pier footing Count count × length × width × depth (all in ft) ÷ 27 Round pier Count count × 0.7854 × diameter² (ft) × depth (ft) ÷ 27 Example: a footing 120 ft long, 24 in wide and 12 in deep is 120 × 2 × 1 ÷ 27 = 8.89 cubic yards. A wall 120 ft long, 8 ft high and 8 in thick is 120 × 8 × 8 ÷ 324 = 23.70. Before you order Take thickened edges, turn-downs and haunches separately; they are not in the slab's area. Subtract openings and pits, not small sleeves. Add waste for spillage, uneven grade and over-excavation. The amount is your judgment and depends on the subgrade; keep it as its own line. Round up to what the plant delivers. In Tally Outline the slab, give the area item a depth in inches and it shows cubic yards, priced per yard if you like. Cut-outs are subtracted. Footings are runs and pads are counts.
+
+Q: How many square feet does a yard of concrete cover at 4 inches?
+A: 81 square feet.
+Q: And at 6 inches?
+A: 54 square feet.
+Q: Why divide by 324?
+A: 27 cubic feet make a cubic yard and 12 inches make a foot: 27 × 12 = 324.
+
+## How to do a drywall takeoff from a floor plan
+
+Wall area = length of wall × height × the number of sides that get board. Subtract large openings, add ceilings, add waste, and divide by the area of the sheet you hang: 32 square feet for 4×8, 48 for 4×12.
+
+Sheets Sheet Square feet Sheets for 1,000 sq ft, no waste 4 × 8 ft 32 31.2 4 × 9 ft 36 27.8 4 × 10 ft 40 25.0 4 × 12 ft 48 20.8 4 × 14 ft 56 17.9 Steps Read the wall types legend first. A partition with one layer each side and one with two layers on one side are different items. Trace each wall type as its own run, at the sheet's scale. Multiply by height. Board to deck and board to ceiling are different heights on the same plan; the sections say which. Multiply by sides, and by layers where the type calls for two. Take doors and windows off if you price labor by area; many leave small openings in because the cut-outs are waste. Outline ceilings by type from the reflected ceiling plan, not the floor plan. Worked example 180 ft of partition, 9 ft high, one layer both sides: 180 × 9 × 2 = 3,240 sq ft. Take off six 3 × 7 ft doors on both sides: 6 × 21 × 2 = 252 sq ft, leaving 2,988. With 10% for waste that is 3,287 sq ft, or 69 sheets of 4 × 12. In Tally Give a run a wall height and it totals wall area as well as length; waste is per item. Starter lists include drywall and framing, and a count of sheets or studs can hang off each item as an assembly.
+
+Q: How many square feet is a 4×12 sheet?
+A: 48.
+Q: Do I subtract doors and windows?
+A: It depends on how you price. Taking out large openings is usual; leaving small ones in covers cutting waste. Do the same on every job.
+Q: Where do ceiling areas come from?
+A: The reflected ceiling plan, which shows each ceiling type's extent.
+
+## How to count fixtures and devices on electrical plans
+
+Start from the legend and fixture schedule, count one symbol at a time across a whole sheet, and mark each as you go, so what is left unmarked is what you have missed. Then compare your totals with the schedule and the panel schedules.
+
+Read the legend and the abbreviations. The same circle can be a receptacle, a junction box or a smoke detector on different jobs. Split by type letter. A 2×4 troffer tagged A and one tagged A-EM are two items. One symbol, one whole sheet. Jumping between symbols is how devices are counted twice. Mark what you count. On paper a highlighter; in an app, a mark on each one, or the counted ones covered up. Watch for repeats. Enlarged plans, unit plans and typical floors show the same devices again. Count a typical unit once and multiply. Check details and risers for devices no floor plan shows: rooftop disconnects, panels, fire alarm risers. Compare with the fixture schedule's types: a type with no count is the first place to look. Look-alikes Easily confused Tell them apart by Duplex and quad receptacles Number of lines or a filled half; check the legend GFCI and weatherproof duplex The letters beside it: GFI, WP Single-pole, 3-way and dimmer switches The subscript: S, S3, SD Exhaust fan and light-fan The tag and the mechanical plan In Tally Tap a symbol and it is counted. Find all (Tally Pro) looks for copies of one you tap, rotated ones included, and proposes them for you to check and add in one step; it works best on plans saved from CAD and finds fewer on scans and photos. Hide counted covers what you have done, so what is left stands out.
+
+Q: Can software count every symbol by itself?
+A: Not reliably. Treat what it proposes as a first pass and check it, above all on scans.
+Q: How do I handle typical floors?
+A: Count one and multiply, and note which sheets you multiplied.
+Q: Why don't my counts match the schedule?
+A: Common causes are enlarged plans counted twice, alternates, and devices shown only on a riser or detail.
